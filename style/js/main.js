@@ -22,22 +22,22 @@ function addCircles() {
 }
 
 function addCircle(x, y) {
-	var circle = document.createElement('div');
-	var animationTime = Math.round(Math.random() * 10);
-	circle.classList.add('circle');
-	circle.style.left = x + 'vw';
-	circle.style.top = y + 'vh';
-	circle.style.backgroundColor = randomColor();
-	circle.style.setProperty('--grow-time', `${animationTime}s`);
-
-	requestAnimationFrame(() => {
-		document.body.appendChild(circle);
-		setTimeout(removeCircle.bind(this, circle), animationTime * 1000);
-	});
+	// var circle = document.createElement('div');
+	// var animationTime = Math.round(Math.random() * 10);
+	// circle.classList.add('circle');
+	// circle.style.left = x + 'vw';
+	// circle.style.top = y + 'vh';
+	// circle.style.backgroundColor = randomColor();
+	// circle.style.setProperty('--grow-time', `${animationTime}s`);
+    //
+	// requestAnimationFrame(() => {
+	// 	document.body.appendChild(circle);
+	// 	setTimeout(removeCircle.bind(this, circle), animationTime * 1000);
+	// });
 }
 
 function removeCircle(circle) {
-	document.body.removeChild(circle);
+	// document.body.removeChild(circle);
 }
 
 function randomPosition() {
